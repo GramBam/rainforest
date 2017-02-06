@@ -41,7 +41,7 @@ class ProductsController < ApplicationController
     redirect_to products_url
   end
 
-  Private
+  private
   def product_params
     params.require(:product).permit(:name, :description, :price_in_cents)
   end
